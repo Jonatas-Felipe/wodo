@@ -142,6 +142,7 @@ export default function Home() {
           felis aptent vivamus nam vulputate
         </p>
       </Descricao>
+    
       <Footer>
         <div>
           <img src={LogoFooter} alt="Logo Wodo" />
@@ -149,6 +150,7 @@ export default function Home() {
             <li>Sobre a Wodo</li>
             <li>Fale conosco</li>
             <li>Condições gerais</li>
+            <li>Cadastrarr</li>
           </ul>
         </div>
       </Footer>
