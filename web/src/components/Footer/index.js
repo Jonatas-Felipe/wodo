@@ -11,8 +11,8 @@ export default function Footer() {
         <img src={LogoFooter} alt="Logo Wodo" />
         <ul>
           <li>Sobre a Wodo</li>
-          <li>Fale conosco</li>
-          <li>Condições gerais</li>
+          <li>Fale Conosco</li>
+          <li>Condições Gerais</li>
         </ul>
       </div>
     </Container>
