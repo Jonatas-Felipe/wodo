@@ -2,37 +2,7 @@ import styled, { css } from 'styled-components';
 import { darken } from 'polished';
 import bgHome from '../../assets/bg-home.svg';
 
-export const Header = styled.header`
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-    padding: 20px;
-    margin: 0 auto;
-
-    img {
-      height: 73px;
-    }
-
-    ul {
-      display: flex;
-      li {
-        margin: 0 30px;
-        color: #9e9c9c;
-        font-weight: bold;
-        font-size: 15px;
-
-        :first-child {
-          color: #707070;
-          border-bottom: 3px solid #41637e;
-        }
-      }
-    }
-  }
-`;
-
-export const Container = styled.div`
+export const BgHome = styled.div`
   background-image: url(${bgHome});
   background-position: top right;
   background-size: contain;
@@ -40,12 +10,15 @@ export const Container = styled.div`
   width: 100%;
 `;
 
+export const Container = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
+`;
+
 export const Content = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
 
   div {
     width: 628px;
@@ -69,14 +42,17 @@ export const Content = styled.div`
       border: none;
       color: #fff;
       background: #41637e;
+      transition: background 0.3s;
+
+      :hover {
+        background: ${darken(0.05, '#41637e')};
+      }
     }
   }
 `;
 
 export const Sobre = styled.div`
   padding: 50px;
-  max-width: 1440px;
-  margin: 0 auto;
 
   h2 {
     text-align: center;
@@ -113,8 +89,7 @@ export const Sobre = styled.div`
   }
 `;
 
-export const Planos = styled.div`
-  padding: 100px 50px;
+export const BgPlanos = styled.div`
   background: linear-gradient(
     90deg,
     #daecff 0%,
@@ -122,6 +97,10 @@ export const Planos = styled.div`
     #fff 20%,
     #fff 100%
   );
+`;
+
+export const Planos = styled.div`
+  padding: 100px 50px;
 
   h2 {
     text-align: center;
@@ -133,12 +112,10 @@ export const Planos = styled.div`
   > div {
     display: flex;
     justify-content: space-around;
-    max-width: 1440px;
-    margin: 0 auto;
   }
 `;
 
-export const BgPlanos = styled.div`
+export const BgPlano = styled.div`
   width: 250px;
   height: 335px;
   border: 1px solid #ccc;
@@ -273,41 +250,5 @@ export const Descricao = styled.div`
     width: 800px;
     text-align: center;
     font-size: 30px;
-  }
-`;
-
-export const Footer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 15px;
-  background: #94afc4;
-
-  div {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-
-    img {
-      width: 45px;
-    }
-
-    ul {
-      display: flex;
-      justify-content: space-between;
-
-      li {
-        color: #fff;
-
-        :nth-child(2) {
-          margin: 0 50px;
-        }
-      }
-    }
   }
 `;
