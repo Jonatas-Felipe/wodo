@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
-import bgHome from '../../assets/bg-home.svg';
+import bgHome from '~/assets/bg-home.svg';
 
 export const BgHome = styled.div`
   background-image: url(${bgHome});

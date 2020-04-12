@@ -12,7 +12,7 @@ export default function Header() {
 
   useEffect(() => {
     setUrl(location.pathname.substring(1));
-  });
+  }, [location.pathname]);
 
   return (
     <Container>
@@ -28,7 +28,7 @@ export default function Header() {
           <MenuItem active={url === 'contato'}>
             <Link to="/contato">Contato</Link>
           </MenuItem>
-          <MenuItem active={url === 'login'}>
+          <MenuItem active={url === 'login' || url === 'cadastrar'}>
             <Link to="/login">Login</Link>
           </MenuItem>
         </ul>
