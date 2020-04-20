@@ -6,6 +6,7 @@ import Servicos from '~/pages/Servicos';
 import Contato from '~/pages/Contato';
 import Login from '~/pages/Login';
 import Cadastro from '~/pages/Cadastro';
+import Perfil from '~/pages/Perfil';
 
 export default function Routes() {
   return (
@@ -15,6 +16,7 @@ export default function Routes() {
       <Route path="/contato" component={Contato} />
       <Route path="/login" component={Login} />
       <Route path="/cadastrar" component={Cadastro} />
+      <Route path="/perfil" component={Perfil} />
     </Switch>
   );
 }

@@ -1,8 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 export default createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+  ::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #41637e;
+}
 
   *{
     margin: 0;

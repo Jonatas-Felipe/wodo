@@ -1,0 +1,74 @@
+{
+  "tipo-user": [
+    {
+      "id": 1,
+      "tipo_user": "Admin",
+      "created_at": "2020-04-13 20:09:16",
+      "updated_at": "2020-04-13 20:09:16"
+    },
+    {
+      "id": 2,
+      "tipo_user": "Cliente",
+      "created_at": "2020-04-13 20:09:16",
+      "updated_at": "2020-04-13 20:09:16"
+    }
+  ],
+  "avatar": [
+    {
+      "id": 1,
+      "name": "avatar.jpg",
+      "path": "http://localhost:3000/assets/avatar.jpg",
+      "created_at": "2020-04-13 20:09:16",
+      "updated_at": "2020-04-13 20:09:16"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jonatas Felipe Fernandes de Campos",
+      "email": "jonatas@amzmp.com.br",
+      "password": "123456",
+      "telefone": null,
+      "celular": "(11) 97259-6964",
+      "created_at": "2020-04-13 20:09:16",
+      "updated_at": "2020-04-13 20:09:16",
+      "avatar_id": 1,
+      "tipo_user_id": 2
+    }
+  ],
+  "endereco": [
+    {
+      "id": 1,
+      "cep": "06435050",
+      "logradouro": "Rua Cesário Verde",
+      "numero": "187",
+      "bairro": "Jardim Tupã",
+      "cidade": "Barueri",
+      "estado": "SP",
+      "user_id": 1
+    }
+  ],
+  "servicos": [
+    {
+      "id": 1,
+      "titulo": "Desenvolvedor de sites",
+      "descricao": "Desenvolvo sites institucionais entre outros",
+      "local": "Rua cesário verde, Nº 187, Jardim Tupã - Barueri - SP",
+      "horario_inicio": "08:00:00",
+      "horario_fim": "18:00:00",
+      "user_id": "1",
+      "created_at": "2020-04-13 20:09:16",
+      "updated_at": "2020-04-13 20:09:16"
+    }
+  ],
+  "files": [
+    {
+      "id": 1,
+      "name": "avatar.jpg",
+      "path": "http://localhost:3000/assets/avatar.jpg",
+      "servico_id": 1,
+      "created_at": "2020-04-13 20:09:16",
+      "updated_at": "2020-04-13 20:09:16"
+    }
+  ]
+}
