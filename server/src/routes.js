@@ -6,6 +6,7 @@ import SessionController from './app/controllers/SessionController';
 
 import UsuarioController from './app/controllers/UsuarioController';
 import AvatarController from './app/controllers/AvatarController';
+import ChatController from './app/controllers/ChatController';
 
 const upload = multer(multerConfig);
 
@@ -22,5 +23,9 @@ routes.put('/usuario/(:id)', UsuarioController.update);
 routes.delete('/usuario/(:id)', UsuarioController.delete);
 
 routes.post('/avatar', upload.single('file'), AvatarController.create);
+
+routes.get('/chat/(:de)/(:para)', ChatController.get);
+routes.post('/chat', ChatController.create);
+routes.post('/chat/setRead', ChatController.setRead);
 
 export default routes;
